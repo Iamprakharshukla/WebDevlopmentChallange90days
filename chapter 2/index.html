@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="add" onclick="cartQuantity+=1;document.querySelector('.cart').innerText = 'Your bag has' +cartQuantity+ ' item';">
+    Add to bag
+  </button>
+
+  <button class="whish" onclick="cartQuantity-=1;document.querySelector('.cart').innerText = 'Your bag has' +cartQuantity+ ' item';">
+    Whishlisht
+  </button>
+
+  <button class="free" onclick="cartQuantity+=2;document.querySelector('.cart').innerText = 'Your bag has' +cartQuantity+ ' item';">
+    1+1 free items
+  </button>
+
+  <h1 class="cart">
+    <!-- Your bag has zero items. -->
+
+  </h1>
+
+  <script>
+    let cartQuantity =0; 
+  document.querySelector('.cart').innerText = 'Your bag has' +cartQuantity+ ' item';
+
+  </script>
+</body>
+</html> 
