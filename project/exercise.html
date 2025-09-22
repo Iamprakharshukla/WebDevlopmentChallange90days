@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function oddEven(num)
+    {
+        if (num % 2 == 0){
+            return 'Even';
+        }else{
+            return 'odd';
+        }
+    }
+
+    let Result = oddEven(2);
+    console.log(Result);
+
+        function largest( num1, num2){
+
+            if (num1 === num2 ){
+                return 'same';
+            }else if (num1>num2){
+                return num1;
+
+            }else { 
+                return num2; 
+            }
+        }
+        
+        let largestNumber = largest(15 , 5);
+        console.log(`the largest no is ${largestNumber}`);
+
+
+    </script>
+</body>
+</html>
