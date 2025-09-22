@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+
+
+
+                let product = {
+                company: 'Mango',
+                price: 20,
+                item_name: 'T - shirt',
+                displayPrice: function () {
+                    console.log(`Price of the product is ${this.price}`);
+                }
+                };
+
+                console.log(product);
+
+                product.company = 'Banana';   // updating company
+                console.log(product);
+
+                delete product.company;       // deleting company
+                console.log(product); 
+
+                // calling method
+                product.displayPrice();
+        
+
+                console.log('this is kg coding casses'.length);
+
+                 console.log('this is kg coding casses'.replace('kg', 'autoboxing'));
+                
+
+
+
+
+                 let a=5;
+                  let b=5;
+
+                  console . log(`a=${a} , b=${b}`);
+
+                  a=8;
+
+                  console . log(`a=${a} , b=${b}`);
+            
+
+                  let x = {num : 5};
+                  let y=x;
+                       console . log(`x=$      {x} , y=${y}`);
+
+                     x.num = 8;
+                      console . log(`x=${x} , y=${y}`);
+
+                let p={pop:'iujh'};
+                  let q={pop:'iujh'};
+
+                  console.log(p==q);
+
+                 
+
+
+ 
+
+
+
+
+        
+    </script>
+</body>
+</html>
